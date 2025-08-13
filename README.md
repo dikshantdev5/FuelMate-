@@ -109,4 +109,7 @@ FuelMate/
 This project is for educational/demo purposes and can be freely modified.
 
 ---
+## 📞 Contact  
+**Email:** gaikwaddikshant55@gmail.com  
+---
 
