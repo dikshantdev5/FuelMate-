@@ -54,17 +54,35 @@ You can also create a new account via **Sign Up**.
 ---
 
 ## 📸 Screenshots
+1️⃣ **Login Page**  
+![Login Page](Login%20Page%20Output%201.png)
 
-![Login Page](Login_Page_Output_1.png)
-![Login Successful Page](Login_Successfull_Output_2.png)
-![Home Page](Home_Page_Output_3.png)
-![CNG Stations ](CNG_Station_Output_4.png)
-![EV Stations](EV_Station_Output_5.png)
-![Petrol Station](Petrol_Station_Output_6.png)
-![Diesel Station](Diesel_Station_Output_7.png)
-![Booking Slots](Booking_slot_Output_8.png)
-![Booking Confirm](Booking_Confirm_Output_9.png)
-![Booking History](Booking_History_Output_10.png)
+2️⃣ **Login Successful Page**  
+![Login Successful Page](Login%20Successfull%20Output%202.png)
+
+3️⃣ **Home Page**  
+![Home Page](Home%20Page%20Output%203.png)
+
+4️⃣ **CNG Stations**  
+![CNG Stations](CNG%20Station%20Output%204.png)
+
+5️⃣ **EV Stations**  
+![EV Stations](EV%20Station%20Output%205.png)
+
+6️⃣ **Petrol Station**  
+![Petrol Station](Petrol%20Station%20Output%206.png)
+
+7️⃣ **Diesel Station**  
+![Diesel Station](Diesel%20Station%20Output%207.png)
+
+8️⃣ **Booking Slots**  
+![Booking Slots](Booking%20slot%20Output%208.png)
+
+9️⃣ **Booking Confirm**  
+![Booking Confirm](Booking%20Confirm%20Output%209.png)
+
+🔟 **Booking History**  
+![Booking History](Booking%20History%20Output%2010.png)
 
 ---
 
