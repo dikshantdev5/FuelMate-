@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Fuel Slot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Book Your Slot</h1>
+</header>
+<main>
+    <form id="bookingForm">
+        <label>Station:</label>
+        <input type="text" id="stationName" readonly>
+
+        <label>Vehicle Number:</label>
+        <input type="text" id="vehicleNumber" required>
+
+        <label>Date:</label>
+        <input type="date" id="date" required>
+
+        <label>Time Slot:</label>
+        <select id="timeSlot" required>
+            <option value="">Select Time</option>
+            <option>08:00 AM</option>
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+        </select>
+
+        <label>Liters/Units to Fill:</label>
+        <input type="number" id="liters" min="1" required oninput="calculateAmount()">
+
+        <label>Amount:</label>
+        <input type="text" id="amount" readonly>
+
+        <button type="submit">Book Now</button>
+    </form>
+</main>
+</body>
+</html>

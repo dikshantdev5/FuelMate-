@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fuel Booking - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Logout button styling */
+        .logout-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 8px 14px;
+            background: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .logout-btn:hover {
+            background: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Fuel Booking</h1>
+        
+    </header>
+
+    <main>
+        <section class="fuel-types">
+            <div class="fuel-card" onclick="showStations('CNG')">
+                <img src="https://thumbs.dreamstime.com/b/compressed-natural-gas-cng-alternative-fuel-pump-acronym-greed-d-letters-words-to-advertise-clean-energy-46611988.jpg" alt="CNG">
+                <h2>CNG</h2>
+            </div>
+            <div class="fuel-card" onclick="showStations('EV')">
+                <img src="https://cdn-icons-png.flaticon.com/512/5750/5750206.png" alt="EV">
+                <h2>EV</h2>
+            </div>
+            <div class="fuel-card" onclick="showStations('Petrol')">
+                <img src="https://img.freepik.com/premium-vector/red-fuel-pump-nozzle_255569-131.jpg" alt="Petrol">
+                <h2>Petrol</h2>
+            </div>
+            <div class="fuel-card" onclick="showStations('Diesel')">
+                <img src="https://img.freepik.com/premium-vector/fuel-diesel-icon-logo-vector-design-template_827767-90.jpg" alt="Diesel">
+                <h2>Diesel</h2>
+            </div>
+        </section>
+        <section id="station-list" class="station-list"></section>
+    </main>
+
+    <script>
+        // Redirect to login if not logged in
+        if (!localStorage.getItem("loggedInUser")) {
+            window.location.href = "login.html";
+        }
+
+        // Logout function
+        function logout() {
+            if (confirm("Are you sure you want to log out?")) {
+                localStorage.removeItem("loggedInUser");
+                window.location.href = "login.html";
+            }
+        }
+    </script>
+
+</body>
+</html>

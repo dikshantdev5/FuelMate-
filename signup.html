@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up - Smart Fuel Booking</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .auth-container {
+        max-width: 400px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    button {
+        background: #203a43;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #2c5364;
+    }
+</style>
+</head>
+<body>
+
+<header>Sign Up</header>
+<div class="auth-container">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+<script>
+function signup() {
+    const user = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value;
+
+    if (!user || !pass) {
+        alert("Please fill all fields.");
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    if (users.find(u => u.username === user)) {
+        alert("Username already exists!");
+        return;
+    }
+
+    users.push({ username: user, password: pass });
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("Sign Up Successful! Please login.");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
