@@ -39,17 +39,17 @@ It allows users to sign up, log in, browse stations, book fuel slots, and track 
 ---
 
 ## 📂 Project Structure
-FuelMate/
-1. index.html # Home page with fuel type selection
-2.  booking.html # Booking form page
-3.   istory.html # Booking history page
-4.     gin.html # Login page
-5. signup.html # Sign-up page
-6. style.css # Stylesheet
-7. script.js # Main JavaScript logic
-8. README.md # Project documentation
 
-You can also create a new account via **Sign Up**.
+FuelMate/  
+├── index.html              # Home page with fuel type selection  
+├── booking.html            # Booking form page  
+├── history.html            # Booking history page  
+├── login.html              # Login page  
+├── signup.html             # Sign-up page  
+├── style.css               # Stylesheet  
+├── script.js               # Main JavaScript logic  
+└── README.md               # Project documentation  
+
 
 ---
 
