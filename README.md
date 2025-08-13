@@ -55,7 +55,7 @@ You can also create a new account via **Sign Up**.
 
 ## 📸 Screenshots
 
-![Login Page](Login_Page_Output.png)
+![Login Page](Login_Page_Output_1.png)
 ![Login Successful Page](Login_Successfull_Output_2.png)
 ![Home Page](Home_Page_Output_3.png)
 ![CNG Stations ](CNG_Station_Output_4.png)
